@@ -1,3 +1,8 @@
+
+*{
+    outline: 0;
+}
+
 .login_block {
     min-height: 100vh;
     display: flex;
@@ -8,6 +13,10 @@
 .red_line {
   background-color: red;
   min-height: 2px;
+}
+
+.logo {
+    width: 500px;
 }
 
 .sign_up_block {
@@ -27,6 +36,18 @@
     border-radius: 0 50px 50px 0;
     text-align: center;
     color: white;
+    background-color: red;
+}
+
+.sign_up_title_block {
+    padding: 6px;
+    width: 120px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 50px 0 0 50px;
+    text-align: center;
+    color: white;
+    float: right;
     background-color: red;
 }
 
@@ -60,6 +81,15 @@
      margin-top: 30px;
 }
 
+.sign_up_inp {
+    width: 300px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 15px;
+}
+
 .login_button {
     padding: 15px;
     width: 150px;
@@ -71,6 +101,10 @@
 }
 
 .login_button_block{
+    margin-top: 50px;
+}
+
+.sign_up_button_block{
     margin-top: 50px;
 }
 
