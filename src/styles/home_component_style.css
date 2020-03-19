@@ -1,0 +1,18 @@
+.passwords_card_view {
+    height: 300px;
+    border-top: 2px solid #030303;
+    margin-bottom: 20px;
+}
+.title_span {
+    height: 30px;
+    width: 150px;
+    background: #030303;
+    border-radius: 7px 7px 0 0px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.title_text {
+    margin: 0px;
+    
+}
