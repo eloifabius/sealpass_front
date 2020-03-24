@@ -7,9 +7,13 @@ export default class password_card_component extends Component {
         return (
             <div className="card">
                 <div className="content">
-                    {/* {password.site}
-                    {password.email}
-                    {password.password} */}
+                    <div className="content_image_wrapper">
+
+                    </div>
+                    <div className="content_text">
+                        <h4>{ password.site }</h4>
+                        <h5>{ password.email }</h5>
+                    </div>
                 </div>
             </div>
         )

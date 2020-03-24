@@ -21,11 +21,11 @@
     margin: auto;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all .5s ease-in-out;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #00b894;
 }
 .content:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 .title_span {
     height: 30px;
@@ -42,22 +42,62 @@
 }
 .control_panel {
     color: #030303;
-    /* border: 1px dashed #030303; */
+    margin-top: 20px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .addButton {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: red;
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s ease-in-out;
 }
 .add {
     width: 20px;
     height: 20px;
+}
+.addButton:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    /* transform: scale(1.2); */
+}
+.content_image_wrapper {
+    width: 100%;
+    height: 60%;
+}
+.content_text {
+    width: 95%;
+    height: 40%;
+    padding: 10px;
+}
+.content_text h4 {
+    margin: 0;
+}
+.content_text h5 {
+    margin: 0;
+    opacity: 0.5;
+    margin-top: 3px;
+}
+.control_panel span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.grid_view {
+    border: 1px dashed #030303;
+}
+.list_view {
+    border: 1px dashed #030303;
+}
+.control_panel h2 {
+    margin: 0;
 }

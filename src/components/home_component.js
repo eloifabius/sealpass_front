@@ -10,37 +10,37 @@ export default class home_component extends Component {
             passwords: [
                 {
                     id: 1,
-                    site: "google.tg",
+                    site: "google.fr ",
                     email: "eloifabius@gmail.com",
                     password: "fabiusfabiusfabiusdvvvvfvrrfrvfv"
                 },
                 {
                     id: 2,
-                    site: "google.tg",
+                    site: "uvsq.fr ",
                     email: "eloifabius@gmail.com",
                     password: "fabiusfabiusfabius"
                 },
                 {
                     id: 3,
-                    site: "google.tg",
+                    site: "youtube.fr ",
                     email: "eloifabius@gmail.com",
                     password: "fabiusfabiusfabius"
                 },
                 {
                     id: 4,
-                    site: "google.tg",
+                    site: "twitter.fr ",
                     email: "eloifabius@gmail.com",
                     password: "fabiusfabiusfabius"
                 },
                 {
                     id: 5,
-                    site: "togozik.tg",
+                    site: "spotify.fr ",
                     email: "eloifabius@gmail.com",
                     password: "fabiusfabiusfabius"
                 },
                 {
                     id: 6,
-                    site: "facebook.tg",
+                    site: "facebook.fr ",
                     email: "eloifabius@gmail.com",
                     password: "fabiusfabiusfabius"
                 }
@@ -53,7 +53,13 @@ export default class home_component extends Component {
             <div className="home_container">
                 <div className="addButton"><img src={add} alt="add" className = "add"/></div>
                 <div className="control_panel">
-                    <h2>My Seal</h2>
+                    <div>
+                        <h2>My Seal</h2>
+                    </div>
+                    <div>
+                        <span className="grid_view"></span>
+                        <span className="list_view"></span>
+                    </div>
                 </div>
                 <div className="title_span"><h4 className="title_text">Passwords</h4></div>
                 <div className="passwords_card_view">
@@ -63,7 +69,9 @@ export default class home_component extends Component {
                 </div>
                 <div className="title_span"><h4 className="title_text">Cards</h4></div>
                 <div className="passwords_card_view">
-
+                    {
+                        passwords.map(password => <PasswordCard password={password} key={password.id} />)
+                    }
                 </div>
             </div>
         )
